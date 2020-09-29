@@ -1,2 +1,2 @@
-# NYC-AirPY
-A look at the stats on NYC Air Quality 
+# NYC 💀 Rates
+A look at the stats on NYC's Death💀 Rates
