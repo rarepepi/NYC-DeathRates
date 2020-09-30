@@ -16,7 +16,7 @@ class DeathDataContainer:
         self.age_adj_rate = age_adj_rate
 
     def __str__(self):
-        return f"{self.year} |  {self.cause} | {self.sex} | {self.race} | {self.deaths} | {self.rate} | {self.age_adj_rate}"
+        return f"{self.year} |  {self.cause} | {self.sex} | {self.race} | {self.deaths} | {self.rate} | {self.age_adj_rate}\n"
 
 
 # Open the data file
@@ -58,6 +58,10 @@ def print_all_stats():
     print_mean(deaths, "deaths")
     print_range(deaths, "deaths")
 
+def print_all_data():
+    for d in cleaned_data:
+        print(d)
+
 def print_max_and_min(data, kind):
     print(f"Max for {kind}: {max(data)}")
     print(f"Min for {kind}: {min(data)}")
@@ -71,6 +75,7 @@ def print_range(data, kind):
 # ------------ MAIN ------------
 def main():
     open_data_file()
+    print_all_data()
     print_all_stats()
 
 
