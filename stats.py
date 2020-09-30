@@ -66,7 +66,7 @@ def print_mean(data, kind):
     print(f"Mean for {kind}: {sum(data) / len(data)}")
 
 def print_range(data, kind):
-    print(f"Range for {kind}: ({data[0]}, {data[-1]})")
+    print(f"Range for {kind}: ({max(data) - min(data)})")
 
 # ------------ MAIN ------------
 def main():
